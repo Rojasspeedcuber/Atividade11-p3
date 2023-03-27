@@ -6,6 +6,9 @@ public class ContaBancaria {
     private String nome;
     private double saldo;
 
+    public ContaBancaria() {
+    }
+
     public ContaBancaria(int numero, String nome) {
         this.numero = numero;
         this.nome = nome;
@@ -18,7 +21,6 @@ public class ContaBancaria {
 
     public void depositar(int numero, double quantia) {
         if (numero == this.numero) {
-            toString();
             saldo += quantia;
         } else {
             System.out.println("Conta não encontrada.");
@@ -28,7 +30,7 @@ public class ContaBancaria {
     public void sacar(int numero, double quantia) {
         if (numero == this.numero && quantia < saldo) {
             toString();
-            saldo += quantia;
+            saldo -= quantia;
         } else {
             System.out.println("Conta não encontrada ou saldo insuficiente.");
         }
