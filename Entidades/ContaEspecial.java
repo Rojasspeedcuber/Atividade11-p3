@@ -2,7 +2,7 @@ package Entidades;
 
 public class ContaEspecial extends ContaBancaria {
 
-    private double limite = 500;
+    private double limite = -500;
 
     public ContaEspecial(int numero, String nome) {
         super(numero, nome);
