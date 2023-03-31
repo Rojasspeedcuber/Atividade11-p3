@@ -84,7 +84,7 @@ public class Contas {
                             System.out.println("Informe o número da sua conta: ");
                             numero = in.nextInt();
                             saldo = contab.getSaldo(numero);
-                            if (saldo == -1) {
+                            if (saldo == -1.0) {
                                 System.out.println("Conta não encontrada.");
                             } else {
                                 System.out.println("Saldo: " + saldo);
@@ -126,7 +126,7 @@ public class Contas {
                             System.out.println("Informe o número da sua conta: ");
                             numero = in.nextInt();
                             saldo = contap.getSaldo(numero);
-                            if (saldo == -1) {
+                            if (saldo == -1.0) {
                                 System.out.println("Conta não encontrada.");
                             } else {
                                 System.out.println("Saldo: " + saldo);
@@ -163,7 +163,7 @@ public class Contas {
                             System.out.println("Informe o número da sua conta: ");
                             numero = in.nextInt();
                             saldo = contae.getSaldo(numero);
-                            if (saldo == -1) {
+                            if (saldo == -1.0) {
                                 System.out.println("Conta não encontrada.");
                             } else {
                                 System.out.println("Saldo: " + saldo);
