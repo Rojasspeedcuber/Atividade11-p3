@@ -2,9 +2,9 @@ package Entidades;
 
 public class ContaBancaria {
 
-    private int numero;
+    protected int numero;
     private String nome;
-    private double saldo;
+    protected double saldo;
 
     public ContaBancaria() {
     }
