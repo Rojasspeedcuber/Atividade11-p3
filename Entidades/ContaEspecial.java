@@ -8,7 +8,7 @@ public class ContaEspecial extends ContaBancaria {
         super(numero, nome);
     }
     
-    
+    @Override
     public void sacar(int numero, double quantia) {
         if (numero == this.numero) {
             saldo -= quantia;      
@@ -20,21 +20,6 @@ public class ContaEspecial extends ContaBancaria {
         } else {
             System.out.println("Conta não encontrada.");
         }
-    }
-
-    public void depositar(int numero, double quantia) {
-        if (numero == this.numero) {
-            saldo += quantia;
-        } else {
-            System.out.println("Conta não encontrada.");
-        }
-    }
-
-    public double getSaldo(int numero) {
-        if (numero == this.numero) {
-            return saldo;
-        }
-        return -1.0;
     }
 
 }

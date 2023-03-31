@@ -91,7 +91,7 @@ public class Contas {
                             }
                             break;
                         default:
-                            System.out.println("Opção inválida! Digite novamente: ");
+                            System.out.println("Opção inválida!");
                     }
                 } while (opcao >= 0);
                 break;
@@ -133,7 +133,7 @@ public class Contas {
                             }
                             break;
                         default:
-                            System.out.println("Opção inválida! Digite novamente: ");
+                            System.out.println("Opção inválida!");
                     }
                 } while (opcao >= 0);
                 break;
@@ -170,7 +170,7 @@ public class Contas {
                             }
                             break;
                         default:
-                            System.out.println("Opção inválida! Digite novamente: ");
+                            System.out.println("Opção inválida!");
                     }
                 } while (opcao >= 0);
                 break;
